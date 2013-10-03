@@ -1,42 +1,45 @@
 {
-	"name": "laravel/laravel",
-	"description": "The Laravel Framework.",
-	"keywords": ["framework", "laravel"],
-	"license": "MIT",
-	"require": {
-		"laravel/framework": "4.0.*",
-		"michelf/php-markdown": "1.3.*",
-		"symfony/yaml": "2.3.*"
-	},
-	"autoload": {
-		"psr-0": {
-			"DevAddiction": "app/src"
-		},
-		"classmap": [
-			"app/commands",
-			"app/controllers",
-			"app/models",
-			"app/database/migrations",
-			"app/database/seeds",
-			"app/tests/TestCase.php"
-		]
-	},
-	"scripts": {
-		"post-install-cmd": [
-			"php artisan optimize"
-		],
-		"pre-update-cmd": [
-			"php artisan clear-compiled"
-		],
-		"post-update-cmd": [
-			"php artisan optimize"
-		],
-		"post-create-project-cmd": [
-			"php artisan key:generate"
-		]
-	},
-	"config": {
-		"preferred-install": "dist"
-	},
-	"minimum-stability": "dev"
+    "name": "devaddiciton.com/site",
+    "type": "project",
+    "homepage": "http://devaddiction.com/",
+    "description": "DevAddiction.com",
+    "authors": [
+        {
+            "name": "Fran Álvarez",
+            "email": "fjalvarez@gmail.com",
+            "homepage": "http://devaddiction.com/",
+            "role": "Developer"
+        }
+    ],
+    "license": "MIT",
+    "keywords": ["devaddiction", "fjalvarez", "laravel", "php"],
+    "require": {
+        "laravel/framework": "4.0.*",
+        "jasonlewis/basset": "4.0.*",
+        "jasonlewis/expressive-date": "1.0.*",
+        "michelf/php-markdown": "1.3.*",
+        "symfony/yaml": "2.3.*",
+        "mrclay/minify": "dev-master",
+        "cssmin/cssmin": "3.0.1"
+    },
+    "autoload": {
+        "psr-0": {
+            "JasonLewis": "app/src"
+        }
+    },
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "cssmin/cssmin",
+                "version": "3.0.1",
+                "dist": { "url": "http://cssmin.googlecode.com/files/cssmin-v3.0.1.php", "type": "file" },
+                "autoload": { "classmap": [ "cssmin-v3.0.1.php" ] }
+            }
+        }
+    ],
+    "config": {
+        "preferred-install": "dist"
+    },
+    "minimum-stability": "dev"
 }
