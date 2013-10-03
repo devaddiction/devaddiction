@@ -24,7 +24,7 @@
         "symfony/yaml": "2.3.*",
         "cssmin/cssmin": "3.0.1",
         "jasonlewis/expressive-date": "1.0.*",
-        "webignition/json-pretty-print": "dev-master",
+        "webignition/json-pretty-print": "dev-master"
     },
 
     "autoload": {
