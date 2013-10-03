@@ -25,7 +25,6 @@
         "cssmin/cssmin": "3.0.1",
         "jasonlewis/expressive-date": "1.0.*",
         "webignition/json-pretty-print": "dev-master",
-        "kazan/articler": "dev-master"
     },
 
     "autoload": {
