@@ -27,14 +27,6 @@
             "JasonLewis": "app/src"
         }
     },
-    "scripts": {
-        "post-install-cmd": [
-            "php artisan optimize"
-        ],
-        "post-update-cmd": [
-            "php artisan optimize"
-        ]
-    },
     "repositories": [
         {
             "type": "package",

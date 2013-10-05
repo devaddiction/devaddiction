@@ -5,7 +5,7 @@ import datetime
 
 #configure this
 publish_dirs = {'staging': 'test.devaddiction.com', 'production': 'devaddiction.com'}
-env.hosts = ['devaddiction.com']
+env.hosts = ['fjalvarez@devaddiction.com']
 srv_root = '/var/www/'
 repo = 'git@github.com:devaddiction/devaddiction.git'
 
