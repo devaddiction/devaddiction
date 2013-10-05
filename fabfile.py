@@ -94,4 +94,4 @@ def update_symlinks(publish_dir, release_path):
         with settings(warn_only=True):
             run("cat last_release > prev_release")
         run("echo '%s' > last_release" % release_path)
-        run("ln -nfs %s/site/web public" % (release_path))
+        run("ln -nfs %s/site/public web" % (release_path))
