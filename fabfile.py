@@ -69,6 +69,7 @@ def run_composer(current_release_path):
 def cleanup_clone(publish_dir, current_release_path):
     with cd("%s/releases" % publish_dir):
         run("rm -rf %s/.git" % (current_release_path))
+        run("rm -rf %s/.DS_Store" % (current_release_path))
         run("rm %s/.gitignore" % (current_release_path))
 
 
@@ -94,4 +95,5 @@ def update_symlinks(publish_dir, release_path):
         with settings(warn_only=True):
             run("cat last_release > prev_release")
         run("echo '%s' > last_release" % release_path)
-        run("ln -nfs %s/site/web web" % (release_path))
+        run("rm -rf web")
+        run("ln -nfs %s/site/public web" % (release_path))
