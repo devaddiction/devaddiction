@@ -69,7 +69,7 @@ def run_composer(current_release_path):
 def cleanup_clone(publish_dir, current_release_path):
     with cd("%s/releases" % publish_dir):
         run("rm -rf %s/.git" % (current_release_path))
-        run("rm %s/site/.gitignore" % (current_release_path))
+        run("rm %s/.gitignore" % (current_release_path))
 
 
 def build_site(current_release_path):
