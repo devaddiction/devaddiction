@@ -2,16 +2,32 @@
 
 /*
 |--------------------------------------------------------------------------
-| Application Routes
+| Read Documentation
 |--------------------------------------------------------------------------
-|
-| Here is where you can register all of the routes for an application.
-| It's a breeze. Simply tell Laravel the URIs it should respond to
-| and give it the Closure to execute when that URI is requested.
-|
 */
 
-Route::get('/', function()
-{
-	return View::make('hello');
-});
+Route::get('code/{project}/{version}/{page?}', 'DocsController@getDocs');
+
+/*
+|--------------------------------------------------------------------------
+| Code
+|--------------------------------------------------------------------------
+*/
+
+Route::controller('code', 'CodeController');
+
+/*
+|--------------------------------------------------------------------------
+| Read Article
+|--------------------------------------------------------------------------
+*/
+
+Route::get('article/{slug}', 'ArticleController@getArticle');
+
+/*
+|--------------------------------------------------------------------------
+| Home
+|--------------------------------------------------------------------------
+*/
+
+Route::controller('/', 'HomeController');
