@@ -62,8 +62,8 @@ abstract class Collection extends \Illuminate\Support\Collection {
 		// to load all items and store the items in the cache.
 		$items = $this->cache->remember($this->identifier, $this->expires, function()
 		{
-			//$items = $this->loader->load();
-			$items = array();
+			$items = $this->loader->load();
+
 			// Spin over each of the items and store the individual articles in the cache
 			// as well so that when we request a single item we can quickly pull it from
 			// the cache.
