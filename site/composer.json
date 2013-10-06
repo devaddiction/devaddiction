@@ -8,7 +8,7 @@
 	},
 	"autoload": {
 		"psr-0": {
-			"JasonLewis": "app/src"
+			"DevAddiction": "app/src"
 		},
 		"classmap": [
 			"app/commands",
