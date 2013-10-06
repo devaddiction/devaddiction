@@ -71,7 +71,6 @@ def cleanup_clone(publish_dir, current_release_path):
         run("rm -rf %s/.git" % (current_release_path))
         run("rm -rf %s/.DS_Store" % (current_release_path))
         run("rm %s/.gitignore" % (current_release_path))
-        run("rm %s/.gitignore" % (current_release_path))
         run("rm %s/site/.gitignore" % (current_release_path))
         run("rm %s/site/.gitattributes" % (current_release_path))
 
