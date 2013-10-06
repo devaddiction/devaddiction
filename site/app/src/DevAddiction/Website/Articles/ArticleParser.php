@@ -27,7 +27,7 @@ class ArticleParser extends Parser {
 	 */
 	public function parse($content, $path)
 	{
-		foreach (['slug', 'date', 'meta', 'excerpt', 'content'] as $type)
+		foreach (array('slug', 'date', 'meta', 'excerpt', 'content') as $type)
 		{
 			$parsed[$type] = $this->{'parse'.studly_case($type)}($content, $path);
 		}
