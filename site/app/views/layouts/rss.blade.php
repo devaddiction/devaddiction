@@ -9,7 +9,7 @@
 		<title><![CDATA[Jason Lewis]]></title>
 		<link>{{ URL::to('/') }}</link>
 		<dc:language>en</dc:language>
-		<dc:creator>me@jasonlewis.me</dc:creator>
+		<dc:creator>me@DevAddiction.me</dc:creator>
 		<dc:rights>Copyright {{ date('Y') }}</dc:rights>
 		<dc:date>{{ date('c') }}</dc:date>
 

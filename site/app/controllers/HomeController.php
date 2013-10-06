@@ -22,7 +22,7 @@ class HomeController extends BaseController {
 	 */
 	public function getIndex()
 	{
-		$this->layout->title = 'Blog and Lab for Developers';
+		$this->layout->title = 'Ramblings From The Land Down Under';
 		$this->layout->nest('content', 'articles.index', ['articles' => $this->articles->orderByDate()->paginate(5) ]);
 	}
 

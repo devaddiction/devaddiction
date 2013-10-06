@@ -3,6 +3,13 @@
 class BaseController extends Controller {
 
 	/**
+	 * Controller layout.
+	 * 
+	 * @var string
+	 */
+	protected $layout = 'layouts.website';
+
+	/**
 	 * Setup the layout used by the controller.
 	 *
 	 * @return void
