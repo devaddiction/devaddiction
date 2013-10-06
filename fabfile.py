@@ -78,7 +78,7 @@ def cleanup_clone(publish_dir, current_release_path):
 def build_site(current_release_path):
     with cd("%s/site" % (current_release_path)):
         run("php artisan optimize")
-        #run("php artisan basset:build --production")
+        run("php artisan basset:build --production")
 
 
 def update_permissions(current_release_path):
