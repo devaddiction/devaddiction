@@ -20,7 +20,7 @@ class DocumentParser extends Parser {
 	 */
 	public function parse($content, $path)
 	{
-		foreach (['slug', 'meta', 'content'] as $type)
+		foreach (array('slug', 'meta', 'content') as $type)
 		{
 			$parsed[$type] = $this->{'parse'.studly_case($type)}($content, $path);
 		}
