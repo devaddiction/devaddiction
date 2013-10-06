@@ -41,7 +41,7 @@ abstract class Collection extends \Illuminate\Support\Collection {
 	 * @param  array  $items
 	 * @return void
 	 */
-	public function __construct(Loader $loader, CacheManager $cache, $expires, $items = [])
+	public function __construct(Loader $loader, CacheManager $cache, $expires, $items = array())
 	{
 		$this->loader = $loader;
 		$this->cache = $cache;

@@ -40,7 +40,7 @@ class ArticleCollection extends Collection {
 	 * @param  array  $items
 	 * @return void
 	 */
-	public function __construct(Loader $loader, CacheManager $cache, Request $request, Paginator $paginator, $expires, $items = [])
+	public function __construct(Loader $loader, CacheManager $cache, Request $request, Paginator $paginator, $expires, $items = array())
 	{
 		$this->loader = $loader;
 		$this->cache = $cache;

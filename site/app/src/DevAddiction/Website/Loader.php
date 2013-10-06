@@ -39,7 +39,7 @@ class Loader {
 	 */
 	public function load()
 	{
-		$items = [];
+		$items = array();
 
 		foreach ($this->getFilesystemIterator($this->path) as $item)
 		{
@@ -47,7 +47,7 @@ class Loader {
 
 			$absolutePath = $item->getRealPath();
 
-			$relativePath = trim(str_replace([realpath($this->path), '\\'], ['', '/'], $absolutePath), '/\\');
+			$relativePath = trim(str_replace(array(realpath($this->path), '\\'), array('', '/'), $absolutePath), '/\\');
 
 			$items[] = $this->factory->make($absolutePath, $relativePath);
 		}
