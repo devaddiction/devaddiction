@@ -23,7 +23,7 @@ class HomeController extends BaseController {
 	public function getIndex()
 	{
 		$this->layout->title = 'Ramblings From The Land Down Under';
-		$this->layout->nest('content', 'articles.index', ['articles' => $this->articles->orderByDate()->paginate(5) ]);
+		$this->layout->nest('content', 'articles.index', array('articles' => $this->articles->orderByDate()->paginate(5) ));
 	}
 
 	/**
@@ -43,9 +43,9 @@ class HomeController extends BaseController {
 	 */
 	public function getRss()
 	{
-		$rss = View::make('layouts.rss', ['articles' => $this->articles->orderByDate()])->render();
+		$rss = View::make('layouts.rss', array('articles' => $this->articles->orderByDate()))->render();
 
-		return Response::make($rss, 200, ['content-type' => 'application/xml']);
+		return Response::make($rss, 200, array('content-type' => 'application/xml'));
 	}
 
 	/**
