@@ -34,7 +34,7 @@ def deploy(version='staging', branch='master'):
     cleanup_clone(publish_dir, current_release_path)
     #build_site(current_release_path)
     update_permissions(current_release_path)
-    update_robots(current_release_path, version)
+    #update_robots(current_release_path, version)
     update_symlinks(publish_dir, current_release_path)
 
 
