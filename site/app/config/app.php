@@ -65,7 +65,7 @@ return array(
 	|
 	*/
 
-	'key' => 'YourSecretKey!!!',
+	'key' => 'XYXNlCOO3C0UwCf75HXTI3fWWPKhvyEQ',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -78,8 +78,8 @@ return array(
 	|
 	*/
 
-	'providers' => array(
-
+    'providers' => array(
+        /* Laravel Base Providers */
 		'Illuminate\Foundation\Providers\ArtisanServiceProvider',
 		'Illuminate\Auth\AuthServiceProvider',
 		'Illuminate\Cache\CacheServiceProvider',
@@ -113,35 +113,46 @@ return array(
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
-		'DevAddiction\Website\WebsiteServiceProvider'
-	),
 
-	/*
-	|--------------------------------------------------------------------------
-	| Service Provider Manifest
-	|--------------------------------------------------------------------------
-	|
-	| The service provider manifest is used by Laravel to lazy load service
-	| providers which are not needed for each request, as well to keep a
-	| list of all of the services. Here, you may set its storage spot.
-	|
-	*/
+        /* Additional Providers */
+        'Zizaco\Confide\ConfideServiceProvider', // Confide Provider
+        'Zizaco\Entrust\EntrustServiceProvider', // Entrust Provider for roles
+        'Basset\BassetServiceProvider', // Better Asset Management
+        'Robbo\Presenter\PresenterServiceProvider', // Presenter
+        'Bllim\Datatables\DatatablesServiceProvider', // Datatables
 
-	'manifest' => storage_path().'/meta',
+        /* Uncomment for use in development */
+//        'Way\Generators\GeneratorsServiceProvider', // Generators
+//        'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider', // IDE Helpers
 
-	/*
-	|--------------------------------------------------------------------------
-	| Class Aliases
-	|--------------------------------------------------------------------------
-	|
-	| This array of class aliases will be registered when this application
-	| is started. However, feel free to register as many as you wish as
-	| the aliases are "lazy" loaded so they don't hinder performance.
-	|
-	*/
+    ),
 
-	'aliases' => array(
+    /*
+    |--------------------------------------------------------------------------
+    | Service Provider Manifest
+    |--------------------------------------------------------------------------
+    |
+    | The service provider manifest is used by Laravel to lazy load service
+    | providers which are not needed for each request, as well to keep a
+    | list of all of the services. Here, you may set its storage spot.
+    |
+    */
 
+    'manifest' => storage_path() . '/meta',
+
+    /*
+    |--------------------------------------------------------------------------
+    | Class Aliases
+    |--------------------------------------------------------------------------
+    |
+    | This array of class aliases will be registered when this application
+    | is started. However, feel free to register as many as you wish as
+    | the aliases are "lazy" loaded so they don't hinder performance.
+    |
+    */
+
+    'aliases' => array(
+        /* Laravel Base Aliases */
 		'App'             => 'Illuminate\Support\Facades\App',
 		'Artisan'         => 'Illuminate\Support\Facades\Artisan',
 		'Auth'            => 'Illuminate\Support\Facades\Auth',
@@ -179,6 +190,18 @@ return array(
 		'Validator'       => 'Illuminate\Support\Facades\Validator',
 		'View'            => 'Illuminate\Support\Facades\View',
 
-	),
+        /* Additional Aliases */
+        'Confide'         => 'Zizaco\Confide\ConfideFacade', // Confide Alias
+        'Entrust'         => 'Zizaco\Entrust\EntrustFacade', // Entrust Alias
+        'Presenter'       => 'Robbo\Presenter\Presenter', // Presenter
+        'Presentable'     => 'Robbo\Presenter\PresentableInterface', // Presenter
+        'Basset'          => 'Basset\Facade', // Better Asset Management
+        'String'          => 'Andrew13\Helpers\String', // String
+        'Carbon'          => 'Carbon\Carbon', // Carbon
+        'Datatables'      => 'Bllim\Datatables\Datatables', // DataTables
+
+    ),
+
+    'available_language' => array('en', 'pt', 'es'),
 
 );

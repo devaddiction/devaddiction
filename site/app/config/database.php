@@ -55,9 +55,9 @@ return array(
 		'mysql' => array(
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
-			'database'  => 'database',
-			'username'  => 'root',
-			'password'  => '',
+			'database'  => 'devaddiction',
+			'username'  => 'devaddiction',
+			'password'  => 'devaddiction',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
@@ -71,7 +71,7 @@ return array(
 			'password' => '',
 			'charset'  => 'utf8',
 			'prefix'   => '',
-			'schema'   => 'public',
+            'schema'   => 'public',
 		),
 
 		'sqlsrv' => array(

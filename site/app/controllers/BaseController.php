@@ -2,12 +2,16 @@
 
 class BaseController extends Controller {
 
-	/**
-	 * Controller layout.
-	 * 
-	 * @var string
-	 */
-	protected $layout = 'layouts.website';
+    /**
+     * Initializer.
+     *
+     * @access   public
+     * @return \BaseController
+     */
+    public function __construct()
+    {
+        $this->beforeFilter('csrf', array('on' => 'post'));
+    }
 
 	/**
 	 * Setup the layout used by the controller.

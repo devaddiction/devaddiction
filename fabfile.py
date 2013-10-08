@@ -83,8 +83,8 @@ def build_site(current_release_path):
 
 def update_permissions(current_release_path):
     with cd("%s" % (current_release_path)):
-        run("chmod 777 -R site/app/storage")
-        run("chmod 777 -R site/public/assets")
+        run("chmod -R 775 site/app/storage")
+        run("chmod -R 775 site/public/assets/compiled")
 
 
 def update_robots(current_release_path, version):
