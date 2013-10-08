@@ -63,7 +63,7 @@ def fetch_repo(branch, publish_dir):
 def run_composer(current_release_path):
     with cd("%s/site" % (current_release_path)):
         run("curl -sS https://getcomposer.org/installer | php")
-        run("php composer.phar install")
+        run("php composer.phar install --dev")
 
 
 def cleanup_clone(publish_dir, current_release_path):
