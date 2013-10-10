@@ -1,5 +1,5 @@
 /bootstrap/compiled.php
-/public/boostrap
+/public/bootstrap/ 
 /vendor
 composer.phar
 composer.lock
