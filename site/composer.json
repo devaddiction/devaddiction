@@ -19,6 +19,7 @@
         "rcrowe/twigbridge": "0.5.*",
         "michelf/php-markdown": "1.3.*",
         "symfony/yaml": "2.3.*",
+        "twbs/bootstrap": "dev-master",
         "kazan/articler": "dev-master"
     },
 

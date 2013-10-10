@@ -33,6 +33,7 @@ def deploy(version='staging', branch='master'):
     run_composer(current_release_path)
     cleanup_clone(publish_dir, current_release_path)
     build_site(current_release_path)
+    move_bootstrap(current_release_path)
     update_permissions(current_release_path)
     #update_robots(current_release_path, version)
     update_symlinks(publish_dir, current_release_path)
@@ -80,11 +81,16 @@ def build_site(current_release_path):
         run("php artisan optimize")
         #run("php artisan basset:build --production")
 
+def move_bootstrap(current_release_path):
+    with cd("%s/site" % (current_release_path)):
+        run("ln -nfs vendor/twbs/bootstrap/dist/js/ public/boostrap/js/")
+        run("ln -nfs vendor/twbs/bootstrap/dist/css/ public/boostrap/css/")
+        run("ln -nfs vendor/twbs/bootstrap/dist/fonts/ public/boostrap/fonts/")
+
 
 def update_permissions(current_release_path):
     with cd("%s" % (current_release_path)):
         run("chmod -R 775 site/app/storage")
-        #run("chmod -R 775 site/public/assets/compiled")
 
 
 def update_robots(current_release_path, version):
