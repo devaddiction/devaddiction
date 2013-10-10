@@ -82,10 +82,10 @@ def build_site(current_release_path):
         #run("php artisan basset:build --production")
 
 def move_bootstrap(current_release_path):
-    with cd("%s/site" % (current_release_path)):
-        run("ln -nfs vendor/twbs/bootstrap/dist/js/ public/bootstrap/js")
-        run("ln -nfs vendor/twbs/bootstrap/dist/css/ public/bootstrap/css")
-        run("ln -nfs vendor/twbs/bootstrap/dist/fonts/ public/bootstrap/fonts")
+    with cd("%s/site/public/bootstrap/" % (current_release_path)):
+        run("ln -nfs vendor/twbs/bootstrap/dist/js/ .")
+        run("ln -nfs vendor/twbs/bootstrap/dist/css/ .")
+        run("ln -nfs vendor/twbs/bootstrap/dist/fonts/ .")
 
 
 def update_permissions(current_release_path):
