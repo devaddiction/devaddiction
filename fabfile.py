@@ -90,7 +90,7 @@ def move_bootstrap(current_release_path):
 
 def update_permissions(current_release_path):
     with cd("%s" % (current_release_path)):
-        run("chmod -R 775 site/app/storage")
+        run("chmod 777 site/app/storage -R")
 
 
 def update_robots(current_release_path, version):
