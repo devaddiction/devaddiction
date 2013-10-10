@@ -83,9 +83,9 @@ def build_site(current_release_path):
 
 def move_bootstrap(current_release_path):
     with cd("%s/site" % (current_release_path)):
-        run("ln -nfs vendor/twbs/bootstrap/dist/js/ public/boostrap/js/")
-        run("ln -nfs vendor/twbs/bootstrap/dist/css/ public/boostrap/css/")
-        run("ln -nfs vendor/twbs/bootstrap/dist/fonts/ public/boostrap/fonts/")
+        run("ln -nfs vendor/twbs/bootstrap/dist/js/ public/boostrap/js")
+        run("ln -nfs vendor/twbs/bootstrap/dist/css/ public/boostrap/css")
+        run("ln -nfs vendor/twbs/bootstrap/dist/fonts/ public/boostrap/fonts")
 
 
 def update_permissions(current_release_path):
