@@ -82,10 +82,6 @@ def build_site(current_release_path):
         #run("php artisan basset:build --production")
 
 def link_vendor_folders(current_release_path):
-    with cd("%s/site/public/bootstrap/" % (current_release_path)):
-        run("ln -nfs ../../vendor/twbs/bootstrap/dist/js/ .")
-        run("ln -nfs ../../vendor/twbs/bootstrap/dist/css/ .")
-        run("ln -nfs ../../vendor/twbs/bootstrap/dist/fonts/ .")
     with cd("%s/site/public/js/" % (current_release_path)):
         run("ln -ns ../../vendor/components/jquery/jquery.min.js .")
 
