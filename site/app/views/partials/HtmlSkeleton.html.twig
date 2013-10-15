@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en" itemscope itemtype="http://schema.org/Blog">
+<head>
+    <meta charset="utf-8">
+    <title>devaddiction | Fran Álvarez's Blog</title>
+    <meta name="author" content="Fran Álvarez">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@devaddiction">
+    <meta name="twitter:creator" content="@devaddiction">
+    <meta name="twitter:title" content="devaddiction | Fran Álvarez's Blog">
+    <meta name="twitter:url" content="http://devaddiction.com/">
+    <meta name="twitter:description" content="A blog by Fran Alvarez about startups, technology, and blogging. It's so meta, even this acronym.">
+    <meta name="twitter:image:src" content="http://devaddiction.com/devaddictionFB.png">
+    <meta content="devaddiction | Fran Álvarez's Blog" property="og:site_name">
+    <meta content="devaddiction | Fran Álvarez's Blog" property="og:title">
+    <meta content="website" property="og:type">
+    <meta content="A blog by Max Woolf about startups, technology, and blogging. It's so meta, even this acronym." property="og:description">
+    <meta content="http://devaddiction.com" property="og:url">
+    <meta content="http://devaddiction.com/devaddictionFB.png" property="og:image">
+    <meta property="og:locale"    content="en_us" />
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="canonical" href="http://minimaxir.com/">
+    <link href="/favicon.png" rel="icon">
+    <link href='http://fonts.googleapis.com/css?family=Quicksand:300,400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+    <link href="/stylesheets/bootstrap.css" rel="stylesheet">
+    <link href="/stylesheets/bootstrap-responsive.css" rel="stylesheet">
+    <link href="/stylesheets/flat-ui.css" rel="stylesheet">
+    <link href="/stylesheets/minimaxir-css.css" rel="stylesheet">
+    <link href="/stylesheets/font-awesome.min.css" rel="stylesheet">
+    <link href="/rss.xml" rel="alternate" title="devaddiction | Fran Álvarez's Blog" type="application/atom+xml">
+    <script src="/js/bootstrap-collapse.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+
+    <link href="https://plus.google.com/u/1/105081082137884739503/" rel="author" />
+
+    {% include "partials.favicon" %}
+
+    <!--[if lt IE 9]>
+    <script src="/js/html5shiv.js"></script>
+    <![endif]-->
+
+    {% block html_head %}
+        <!-- Extra: per-view assets/code -->
+    {% endblock %}
+
+</head>
+<body id="{{ body_id|default("body") }}">
+
+    <div id="wrapper">
+        {% block page_contents %}
+            <!-- A page without content... how sad... -->
+        {% endblock %}
+    </div>
+
+    {% block html_end %}
+        <!-- Extra: per-view assets/code -->
+    {% endblock %}
+</body>
+</html>
