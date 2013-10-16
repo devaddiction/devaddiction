@@ -1,19 +1,19 @@
 {% extends "partials/HtmlSkeleton.html.twig" %}
 
-{% block page_contents %}
+{% block page_content %}
 
-    <header role="banner" class="clfix">
-        {% include "partials.menu" %}
-    </header>
+    {% include "partials.menu" %}
 
-    <div role="main" class="clfix">
-        {% block content %}
-        <!-- To be replaced -->
+    <div class="container">
+
+        {% block header %}
         {% endblock %}
-    </div>
 
-    <footer role="contentinfo" class="clfix">
+        {% block content %}
+        {% endblock %}
+
         {% include "partials.footer" %}
-    </footer>
+
+    </div>
 
 {% endblock %}
