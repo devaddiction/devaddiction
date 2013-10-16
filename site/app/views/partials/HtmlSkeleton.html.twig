@@ -23,42 +23,36 @@
     <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="canonical" href="http://minimaxir.com/">
-    <link href="/favicon.png" rel="icon">
-    <link href='http://fonts.googleapis.com/css?family=Quicksand:300,400' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
-    <link href="/stylesheets/bootstrap.css" rel="stylesheet">
-    <link href="/stylesheets/bootstrap-responsive.css" rel="stylesheet">
-    <link href="/stylesheets/flat-ui.css" rel="stylesheet">
-    <link href="/stylesheets/minimaxir-css.css" rel="stylesheet">
-    <link href="/stylesheets/font-awesome.min.css" rel="stylesheet">
-    <link href="/rss.xml" rel="alternate" title="devaddiction | Fran Álvarez's Blog" type="application/atom+xml">
-    <script src="/js/bootstrap-collapse.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
+    <link href="/images/favicon.ico" rel="icon" type="image/x-icon">
+    <link href="/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro|Open+Sans" rel="stylesheet" type="text/css">
+    <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+    <script async="" src="//www.google-analytics.com/analytics.js"></script><script id="twitter-wjs" src="http://platform.twitter.com/widgets.js"></script><script type="text/javascript" async="" src="//crsmithdev.disqus.com/embed.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://google-code-prettify.googlecode.com/svn/loader/prettify.css">
+    <script src="//a.disquscdn.com/1381873203/build/next/alfie.js" async="" charset="UTF-8"></script>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 
     <link href="https://plus.google.com/u/1/105081082137884739503/" rel="author" />
 
     {% include "partials.favicon" %}
 
-    <!--[if lt IE 9]>
-    <script src="/js/html5shiv.js"></script>
-    <![endif]-->
-
-    {% block html_head %}
-        <!-- Extra: per-view assets/code -->
-    {% endblock %}
-
 </head>
-<body id="{{ body_id|default("body") }}">
+<body>
 
-    <div id="wrapper">
-        {% block page_contents %}
-            <!-- A page without content... how sad... -->
-        {% endblock %}
+    {% include "partials.menu" %}
+
+    <div class="container">
+
+        <div class="page-header" id="banner">
+            {% include "partials.header" %}
+        </div>
+
     </div>
-
-    {% block html_end %}
-        <!-- Extra: per-view assets/code -->
-    {% endblock %}
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/bootswatch.js"></script>
 </body>
 </html>

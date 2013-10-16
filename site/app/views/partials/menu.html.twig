@@ -1,33 +1,39 @@
-<div class="navbar navbar-inverse navbar-static-top">
-   <div class="navbar-inner">
-      <div class="container">
-         <ul class="nav social">
-            <li class="rss visible-desktop">
-               <a href="http://devaddiction.com/rss.xml" target="_blank"> <i class="icon-rss-sign"></i>  </a>
+<div class="navbar navbar-default navbar-fixed-top">
+   <div class="container">
+      <div class="navbar-header">
+         <a href="../" class="navbar-brand">DevAddiction</a>
+         <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         </button>
+      </div>
+      <div class="navbar-collapse collapse" id="navbar-main">
+         <ul class="nav navbar-nav">
+            <li>
+               <a href="blog">Blog</a>
             </li>
-            <li class="facebook">
-               <a href="http://facebook.com/devaddiction" target="_blank"> <i class="icon-facebook-sign"></i> </a>
+            <li class="dropdown">
+               <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="download">Repositories <span class="caret"></span></a>
+               <ul class="dropdown-menu" aria-labelledby="download">
+                  <li><a tabindex="-1" href="./bootstrap.min.css">bootstrap.min.css</a></li>
+                  <li><a tabindex="-1" href="./bootstrap.css">bootstrap.css</a></li>
+                  <li class="divider"></li>
+                  <li><a tabindex="-1" href="./variables.less">variables.less</a></li>
+                  <li><a tabindex="-1" href="./bootswatch.less">bootswatch.less</a></li>
+               </ul>
             </li>
-            <li class="twitter">
-               <a href="http://twitter.com/devaddiction" target="_blank"> <i class="icon-twitter-sign"></i> </a>
-            </li>
-            <li class="linkedin">
-               <a href="http://linkedin.com/in/devaddiction" target="_blank"> <i class="icon-linkedin-sign"></i> </a>
-            </li>
-            <li class="github">
-               <a href="http://github.com/devaddiction" target="_blank"> <i class="icon-github-sign"></i> </a>
+            <li>
+               <a href="about-me">About Me</a>
             </li>
          </ul>
-         <a class="btn btn-navbar" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-         <span class="fui-menu-24"></span>
-         </a>
-         <div class="nav-collapse collapse navbar-responsive-collapse" style="height:0;">
-            <ul class="nav">
-               <li><a href="/">Home</a></li>
-               <li><a href="/about">About</a></li>
-               <li><a href="/contact">Contact</a></li>
-            </ul>
-         </div>
+         <ul class="nav navbar-nav navbar-right">
+            <li><a href="http://www.devaddiction.com/rss.xml" target="_blank"> <i class="icon-rss icon-large"></i></a></li>
+            <li>|</li>
+            <li><a href="http://www.facebook.com/devaddiction" target="_blank"> <i class="icon-facebook icon-large"></i></a></li>
+            <li><a href="http://www.twitter.com/devaddiction" target="_blank"> <i class="icon-twitter icon-large"></i></a></li>
+            <li><a href="http://www.github.com/devaddiction" target="_blank"> <i class="icon-github icon-large"></i></a></li>
+         </ul>
       </div>
    </div>
 </div>
