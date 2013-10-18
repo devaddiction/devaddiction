@@ -115,7 +115,8 @@ return array(
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 
 		//Minetermi
-		'TwigBridge\TwigServiceProvider'
+		'TwigBridge\TwigServiceProvider',
+        'Kazan\Articler\ArticlerServiceProvider'
 	),
 
 	/*

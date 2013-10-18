@@ -13,5 +13,5 @@
 
 Route::resource(
     '/',
-    'HomeController'
+    'App\Controllers\HomeController'
 );

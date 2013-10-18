@@ -81,3 +81,26 @@ App::down(function()
 */
 
 require app_path().'/filters.php';
+
+App::bind(
+    'Kazan\Articler\Repository\RepositoryInterface',
+    function($app) {
+        return new App\Content\ContentRepository(
+            new Kazan\Articler\Filesystem\LaravelFilesystem(),
+            $app['config']->get('articler::storage')
+        );
+    }
+);
+App::bind(
+    'Kazan\Articler\Parser\ParserInterface',
+    'Kazan\Articler\Parser\MarkdownParser'
+);
+App::bind(
+    'Kazan\Articler\Cache\CacheInterface',
+    'Kazan\Articler\Cache\LaravelCache'
+);
+App::bind(
+    'Kazan\Articler\Config\ConfigInterface',
+    'Kazan\Articler\Config\LaravelConfig'
+);
+

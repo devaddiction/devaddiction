@@ -28,8 +28,8 @@ $app->redirectIfTrailingSlash();
 
 $env = $app->detectEnvironment(array(
 
-	'local' => array('your-machine-name'),
-
+	'local' => array('devaddiction.devel'),
+    'staging' => array('test.devaddiction.devel')
 ));
 
 /*

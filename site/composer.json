@@ -27,6 +27,7 @@
     "autoload": {
         "classmap": [
             "app/controllers",
+            "app/controllers/content",
             "app/tests",
             "app/libs"
         ]

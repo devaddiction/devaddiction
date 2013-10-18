@@ -1,10 +1,47 @@
 <?php
 
-class HomeController extends BaseController {
+namespace App\Controllers;
 
+use Illuminate\Support\Facades\URL;
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\View;
+use Kazan\Articler\Articler;
+
+class HomeController extends BaseController
+{
+    /**
+     * The filesystem instance.
+     *
+     * @var \Kazan\ArticlesBin
+     */
+    protected $articles;
+
+    /**
+     * Class constructor
+     * @param Articler $articles
+     */
+    public function __construct(Articler $articles)
+    {
+        $this->articles = $articles;
+    }
+    /**
+     * @inhertidoc
+     */
     public function index()
     {
-        return View::make('home.index')->with(array('test'=> 'supu'));
+        $lastestArticles = $this->articles->getList('articles', 0, 3);
+        $articles = array();
+
+        foreach($lastestArticles->getArticles() as $index=>$article) {
+            $articles[$index] =
+                $this->articles->getArticle('articles', $article->getSlug());
+        }
+
+        return View::make('home.index')->with(
+            array(
+                'latestArticles'=> $articles
+            )
+        );
     }
 
 }
