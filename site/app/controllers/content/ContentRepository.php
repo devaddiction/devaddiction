@@ -24,6 +24,7 @@ class ContentRepository extends \Kazan\Articler\Repository\JsonStaticRepository
             ->setAuthor($metadata['author'])
             ->setCreated(new DateTime($metadata['created']))
             ->setContent($content)
+            ->setTeaser($metadata['teaser'])
             ->setDownloadLink($metadata['download_link'])
             ->setDemoLink($metadata['demo_link'])
             ->setTags($this->buildArticleTags($metadata));

@@ -20,6 +20,11 @@ class Article extends \Kazan\Articler\Article\Article
      */
     protected $demoLink;
 
+    /**
+     * @var string
+     */
+    protected $teaser;
+
 
     /**
      * Gets the value of download link.
@@ -69,6 +74,31 @@ class Article extends \Kazan\Articler\Article\Article
         return $this;
     }
 
+
+    /**
+     * Gets the value of teaser.
+     *
+     * @return string
+     */
+    public function setTeaser()
+    {
+        return $this->teaser;
+    }
+
+    /**
+     * Sets the value of teaser.
+     *
+     * @param string $teaser the teaser
+     *
+     * @return self
+     */
+    public function setTeaser($teaser)
+    {
+        $this->teaser = $teaser;
+
+        return $this;
+    }
+
     /**
      * Get the JSON serialized
      * @return
@@ -78,6 +108,7 @@ class Article extends \Kazan\Articler\Article\Article
         $data = parent::jsonSerialize();
         $data['downloadLink'] = $this->downloadLink;
         $data['demoLink'] = $this->demoLink;
+        $data['teaser'] = $this->teaser;
         return $data;
     }
 }

@@ -17,7 +17,7 @@
               <div class="thumbnail">
                  <div class="caption">
                     <h3>{{ article.title }}</h3>
-                    {{ article.content|trim(300)|raw }}
+                    {{ article.teaser|raw }}
                     <p>
                     {% if article.getDemoLink %}
                        <a href="{{ article.getDemoLink }}" class="btn btn-primary" target="_blank">Demo</a>
