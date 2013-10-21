@@ -80,7 +80,7 @@ class Article extends \Kazan\Articler\Article\Article
      *
      * @return string
      */
-    public function setTeaser()
+    public function getTeaser()
     {
         return $this->teaser;
     }
