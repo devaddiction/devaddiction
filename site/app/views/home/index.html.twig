@@ -1,20 +1,20 @@
 {% extends parent_layout|default("layouts.general") %}
 
 {% block header %}
-<div class="page-header" id="banner">
-    <div class="jumbotron">
-        <h1>Welcome!</h1>
-        <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-        <p><a class="btn btn-primary btn-lg">Learn more</a></p>
+<div class="bs-header" id="content">
+      <div class="container">
+        <h1>Getting started</h1>
+        <p>An overview of Bootstrap, how to download and use, basic templates and examples, and more.</p>
+        <div id="carbonads-container"><div class="carbonad"><div id="azcarbon"></div><script>var z = document.createElement("script"); z.async = true; z.src = "http://engine.carbonads.com/z/32341/azcarbon_2_1_0_HORIZ"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(z, s);</script></div></div>
+      </div>
     </div>
-</div>
 {% endblock %}
 
 {% block content %}
 <div class="row">
     <ul class="hover-block">
     {% for article in latestArticles %}
-        <div class="col-md-3">
+        <div class="col-md-4">
             <li>
                 <!-- Image -->
                 <a href="/articles/{{ article.getSlug }}"><img src="{{ article.getThumbnail }}" alt="{{ article.title }}">
