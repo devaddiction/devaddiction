@@ -27,6 +27,7 @@ class ContentRepository extends \Kazan\Articler\Repository\JsonStaticRepository
             ->setTeaser($metadata['teaser'])
             ->setDownloadLink($metadata['download_link'])
             ->setDemoLink($metadata['demo_link'])
+            ->setThumbnail($metadata['thumbnail'])
             ->setTags($this->buildArticleTags($metadata));
         return $article;
     }

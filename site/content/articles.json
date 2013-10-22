@@ -7,6 +7,7 @@
         "download_link": "http://www.google.es",
         "demo_link": "http://www.google.es",
         "teaser": "this is a the teaser",
+        "thumbnail": "/images/thumbnails/about-site.png",
         "contents": "2013-06-15-about-this-site.md"
     }
 }

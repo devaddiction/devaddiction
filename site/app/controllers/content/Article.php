@@ -25,6 +25,11 @@ class Article extends \Kazan\Articler\Article\Article
      */
     protected $teaser;
 
+    /**
+     * @var string
+     */
+    protected $thumbnail;
+
 
     /**
      * Gets the value of download link.
@@ -74,7 +79,6 @@ class Article extends \Kazan\Articler\Article\Article
         return $this;
     }
 
-
     /**
      * Gets the value of teaser.
      *
@@ -100,6 +104,30 @@ class Article extends \Kazan\Articler\Article\Article
     }
 
     /**
+     * Gets the value of thumbnail.
+     *
+     * @return string
+     */
+    public function getThumbnail()
+    {
+        return $this->thumbnail;
+    }
+
+    /**
+     * Sets the value of thumbnail.
+     *
+     * @param string $thumbnail the thumbnail
+     *
+     * @return self
+     */
+    public function setThumbnail($thumbnail)
+    {
+        $this->thumbnail = $thumbnail;
+
+        return $this;
+    }
+
+    /**
      * Get the JSON serialized
      * @return
      */
@@ -109,6 +137,7 @@ class Article extends \Kazan\Articler\Article\Article
         $data['downloadLink'] = $this->downloadLink;
         $data['demoLink'] = $this->demoLink;
         $data['teaser'] = $this->teaser;
+        $data['thubmanil'] = $this->thumbnail;
         return $data;
     }
 }
