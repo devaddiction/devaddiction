@@ -1,0 +1,20 @@
+{% extends parent_layout|default("layouts.general") %}
+
+{% block content %}
+<article class="reader">
+
+
+    <h1>{{ article.getTitle() }}</h1>
+
+    <footer>
+        {{ article.getCreated()|date('jS F, Y') }}
+        | by <a href="/about">{{ article.getAuthor() }}</a>
+        | {{ element.tags(article.getTags()) }}
+    </footer>
+
+    <div>
+        {{ article.getContent()|raw }}
+    </div>
+
+</article>
+{% endblock %}

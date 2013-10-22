@@ -15,3 +15,8 @@ Route::resource(
     '/',
     'App\Controllers\HomeController'
 );
+
+Route::resource(
+    'articles',
+    'App\Controllers\ArticlesController'
+);

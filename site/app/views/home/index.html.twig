@@ -19,7 +19,7 @@
                 <img src="{{ article.getThumbnail }}" alt="{{ article.title }}">
             {% endif %}
             <div class="caption">
-                <h3>{{ article.title }}</h3>
+                <a href="/articles/{{ article.getSlug }}"><h3>{{ article.title }}</h3></a>
                 {{ article.teaser|raw }}
                 <p>
                 {% if article.getDemoLink %}
