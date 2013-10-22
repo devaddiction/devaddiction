@@ -9,6 +9,12 @@ use Kazan\Articler\Articler;
 
 class HomeController extends BaseController
 {
+
+    /**
+     * @var  int
+     */
+    const MAX_HOME_ARTICLES = 2;
+
     /**
      * The filesystem instance.
      *
@@ -29,7 +35,7 @@ class HomeController extends BaseController
      */
     public function index()
     {
-        $lastestArticles = $this->articles->getList('articles', 0, 3);
+        $lastestArticles = $this->articles->getList('articles', 0, self::MAX_HOME_ARTICLES);
         $articles = array();
 
         foreach($lastestArticles->getArticles() as $index=>$article) {

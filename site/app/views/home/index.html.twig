@@ -12,26 +12,21 @@
 
 {% block content %}
 <div class="row">
+    <ul class="hover-block">
     {% for article in latestArticles %}
-        <div class="col-md-4">
-            <div class="thumbnail">
-            {% if article.getThumbnail %}
-                <a href="/articles/{{ article.getSlug }}"><img src="{{ article.getThumbnail }}" alt="{{ article.title }}"></a>
-            {% endif %}
-            <div class="caption">
-                <h3><a href="/articles/{{ article.getSlug }}">{{ article.title }}</a></h3>
-                {{ article.teaser|raw }}
-                <p>
-                {% if article.getDemoLink %}
-                    <a href="{{ article.getDemoLink }}" class="btn btn-primary" target="_blank">Demo</a>
-                {% endif %}
-                {% if article.getDownloadLink %}
-                    <a href="{{ article.getDownloadLink }}" class="btn btn-default">Download</a>
-                {% endif %}
-                </p>
-            </div>
-            </div>
+        <div class="col-md-3">
+            <li>
+                <!-- Image -->
+                <a href="/articles/{{ article.getSlug }}"><img src="{{ article.getThumbnail }}" alt="{{ article.title }}">
+                    <!-- Content with background color Class -->
+                    <div class="hover-content hover-content-background" style="top: 155px;">
+                        <h6>{{ article.title }}</h6>
+                        {{ article.teaser|raw }}
+                    </div>
+                </a>
+            </li>
         </div>
     {% endfor %}
-</div>
+    </ul>
+    </div>
 {% endblock %}
