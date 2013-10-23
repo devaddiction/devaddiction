@@ -11,6 +11,10 @@
 }
 /* Image blocks */
 
+ul.hover-block {
+    list-style: none;
+}
+
 ul.hover-block li{
     list-style:none;
     float:left;

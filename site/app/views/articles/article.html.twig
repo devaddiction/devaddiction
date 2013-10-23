@@ -1,10 +1,16 @@
 {% extends parent_layout|default("layouts.general") %}
 
+{% block header %}
+<div class="bs-header" id="content">
+      <div class="container">
+        <h1>{{ article.getTitle() }}</h1>
+        <p>{{ article.getTeaser() }}</p>
+    </div>
+{% endblock %}
+
 {% block content %}
 <article class="reader">
 
-
-    <h1>{{ article.getTitle() }}</h1>
 
     <footer>
         {{ article.getCreated()|date('jS F, Y') }}
