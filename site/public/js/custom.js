@@ -5,3 +5,8 @@ $(function() {
         $(this).find('.hover-content').animate({top:'155px'},{queue:false,duration:500});
       });
 });
+
+$(".rotate").textrotator({
+  animation: "spin",
+  speed: 750
+});
