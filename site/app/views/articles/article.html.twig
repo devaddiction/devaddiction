@@ -12,12 +12,11 @@
 {% block content %}
 <article class="reader">
 
+    {% import "macros.utils" as utils %}
 
-    <footer>
-        {{ article.getCreated()|date('jS F, Y') }}
-        | by <a href="/about">{{ article.getAuthor() }}</a>
-        | {{ element.tags(article.getTags()) }}
-    </footer>
+    <header>
+        {{ article.getCreated()|date('jS F, Y') }} | {{ utils.tags(article.getTags()) }}
+    </header>
 
     <div>
         {{ article.getContent()|raw }}

@@ -82,3 +82,16 @@ ul.tags-list li{
     list-style: none;
     display: inline;
 }
+
+/* Article */
+article.reader {
+    margin-top: 20px;
+}
+
+article.reader header {
+    margin-bottom: 20px;
+}
+
+article.reader p {
+    font-size: 23px;
+}
