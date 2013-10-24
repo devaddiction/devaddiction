@@ -39,8 +39,13 @@ class ArticlesController extends BaseController
     public function index()
     {
         $list = $this->articles->getList('articles');
+        $articles = array();
 
-        return View::make('articles.index')->with('list', $list);
+        foreach($list->getArticles() as $index=>$article) {
+            $articles[$index] =
+                $this->articles->getArticle('articles', $article->getSlug());
+        }
+        return View::make('articles.index')->with('list', $articles);
     }
 
     /**

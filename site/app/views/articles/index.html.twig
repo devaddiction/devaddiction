@@ -10,6 +10,8 @@
 {% endblock %}
 
 {% block content %}
+    {% import "macros.utils" as utils %}
+
     <article class="list">
         {% for article in list.getArticles() %}
         <div class="row">
@@ -20,9 +22,10 @@
                 <div class="col-md-8">
                     <div class="caption">
                         <a href="/articles/{{ article.getSlug() }}"><h3>{{ article.getTitle() }}</h3></a>
-                        <span>{{ article.getCreated()|date('jS F, Y') }}</span>
-                        <p>{{ article.getContents()|raw }}</p>
-                        <p><a href="#" class="btn btn-primary">Button</a> <a href="#" class="btn btn-default">Button</a></p>
+                            <span>{{ article.getCreated()|date('jS F, Y') }}</span> |
+                            {{ utils.tags(article.getTags()) }}
+                        <p>{{ article.getContent()|raw }}</p>
+                        <p><a href="/articles/{{ article.getSlug }}" class="btn btn-primary">Read more</a></p>
                     </div>
                 </div>
             </div>

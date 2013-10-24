@@ -1,0 +1,9 @@
+{% macro tags(tags, base_url = "/tags/") %}
+    <ul class="tags-list">
+        {% for tag in tags|default([]) %}
+        <li>
+            <a href="{{ base_url ~ tag.getTitle() }}">{{ tag.getTitle() }}</a>{% if not loop.last %}, {% endif %}
+        </li>
+        {% endfor %}
+    </ul>
+{% endmacro %}
