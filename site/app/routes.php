@@ -20,3 +20,14 @@ Route::resource(
     'articles',
     'App\Controllers\ArticlesController'
 );
+
+Route::resource(
+    'tags',
+    'App\Controllers\TagsController'
+);
+
+Route::resource(
+    'about-me',
+    'App\Controllers\AboutMeController'
+);
+

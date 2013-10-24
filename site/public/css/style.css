@@ -83,6 +83,18 @@ ul.tags-list li{
     display: inline;
 }
 
+/* Article list */
+
+article.list .row div {
+    margin-top: 20px;
+}
+
+article.list .articleThumb{
+    margin-top: 30px;
+    width: 300px;
+    height: 200px;
+}
+
 /* Article */
 article.reader {
     margin-top: 20px;
@@ -92,6 +104,6 @@ article.reader header {
     margin-bottom: 20px;
 }
 
-article.reader p {
-    font-size: 23px;
+#article p {
+    font-size: 18px;
 }

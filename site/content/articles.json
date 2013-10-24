@@ -1,35 +1,24 @@
 {
-    "testing-article1": {
-        "title": "What's powering what in here",
+    "ajax-notifier-jquery": {
+        "title": "Ajax Notifier using jQuery",
         "author": "Fran Álvarez",
-        "created": "2013-06-15",
-        "tags": ["projects", "arquitecture", "system"],
-        "download_link": "http://www.google.es",
-        "demo_link": "http://www.google.es",
-        "teaser": "this is a the teaser asfa sdfas fasf asfd this is a the teaser asfa sdfas fasf asfd ",
-        "thumbnail": "/images/thumbnails/about-site.png",
-        "contents": "2013-06-15-about-this-site.md"
+        "created": "2012-07-21",
+        "tags": ["jquery"],
+        "download_link": "",
+        "demo_link": "",
+        "teaser": "How to create an Ajax Notifier using jQuery Library",
+        "thumbnail": "/images/thumbnails/ajax-notifier.png",
+        "contents": "2012-07-21-ajax-notifier-jquery.md"
     },
-    "testing-article2": {
-        "title": "What's powering what in here",
+    "strands-lambdas-bugs": {
+        "title": "Strands, lambdas ... and bugs",
         "author": "Fran Álvarez",
-        "created": "2013-06-15",
-        "tags": ["projects", "arquitecture", "system"],
-        "download_link": "http://www.google.es",
-        "demo_link": "http://www.google.es",
-        "teaser": "this is a the teaser asfa sdfas fasf asfd this is a the teaser asfa sdfas fasf asfd ",
-        "thumbnail": "/images/thumbnails/about-site.png",
-        "contents": "2013-06-15-about-this-site.md"
-    },
-    "testing-article3": {
-        "title": "What's powering what in here",
-        "author": "Fran Álvarez",
-        "created": "2013-06-15",
-        "tags": ["projects", "arquitecture", "system"],
-        "download_link": "http://www.google.es",
-        "demo_link": "http://www.google.es",
-        "teaser": "this is a the teaser",
-        "thumbnail": "/images/thumbnails/about-site.png",
-        "contents": "2013-06-15-about-this-site.md"
+        "created": "2012-07-10",
+        "tags": ["development"],
+        "download_link": "",
+        "demo_link": "http://demo.devaddiction.com/ajaxNotifier",
+        "teaser": "One of the first mistakes when you start in concurrent development",
+        "thumbnail": "/images/thumbnails/parallel-processing.png",
+        "contents": "2012-07-10-strands-lambdas-bugs.md"
     }
 }

@@ -4,7 +4,6 @@
 <div class="bs-header" id="content">
       <div class="container">
         <h1>Articles</h1>
-        <p>An overview of Bootstrap, how to download and use, basic templates and examples, and more.</p>
     </div>
 </div>
 {% endblock %}
@@ -14,19 +13,17 @@
 
     <article class="list">
         {% for article in list %}
-        <div class="row">
-            <div class="thumbnail">
-                <div class="col-md-4">
-                        <a href="/articles/{{ article.getSlug }}"><img src="{{ article.getThumbnail }}" alt="{{ article.title }}">
-                </div>
-                <div class="col-md-8">
-                    <div class="caption">
-                        <a href="/articles/{{ article.getSlug() }}"><h3>{{ article.getTitle() }}</h3></a>
-                            <span>{{ article.getCreated()|date('jS F, Y') }}</span> |
-                            {{ utils.tags(article.getTags()) }}
-                        <p>{{ article.getContent()|raw }}</p>
-                        <p><a href="/articles/{{ article.getSlug }}" class="btn btn-primary">Read more</a></p>
-                    </div>
+        <div class="hover-block">
+            <div class="col-md-4">
+                    <a href="/articles/{{ article.getSlug }}"><img src="{{ article.getThumbnail }}" alt="{{ article.title }}">
+            </div>
+            <div class="col-md-8">
+                <div class="caption">
+                    <a href="/articles/{{ article.getSlug() }}"><h3>{{ article.getTitle() }}</h3></a>
+                        <span>{{ article.getCreated()|date('jS F, Y') }}</span> |
+                        {{ utils.tags(article.getTags()) }}
+                    <p>{{ utils.cutText(article.getContent()) }}</p>
+                    <p><a href="/articles/{{ article.getSlug }}" class="btn btn-primary">Read more</a></p>
                 </div>
             </div>
         </div>
