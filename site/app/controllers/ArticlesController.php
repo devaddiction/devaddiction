@@ -45,6 +45,7 @@ class ArticlesController extends BaseController
             $articles[$index] =
                 $this->articles->getArticle('articles', $article->getSlug());
         }
+
         return View::make('articles.index')->with('list', $articles);
     }
 
