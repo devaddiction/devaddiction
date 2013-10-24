@@ -7,6 +7,6 @@ $(function() {
 });
 
 $(".rotate").textrotator({
-  animation: "spin",
-  speed: 750
+    animation: "dissolve",
+    speed: 2000
 });
