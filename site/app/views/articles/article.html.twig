@@ -5,12 +5,14 @@
       <div class="container">
         <h1>{{ article.getTitle() }}</h1>
         <p>{{ article.getTeaser() }}</p>
+        <p>
         {% if article.getDemoLink %}
-            <p><a href="{{ article.getDemoLink }}" class="btn btn-primary">Demo</a></p>
+            <a href="{{ article.getDemoLink }}" class="btn btn-default">Demo</a>
         {% endif %}
         {% if article.getDownloadLink %}
-            <p><a href="{{ article.getDownloadLink }}" class="btn btn-secondary">Download</a></p>
+            <a href="{{ article.getDownloadLink }}" class="btn btn-info">Download</a>
         {% endif %}
+        </p>
     </div>
 </div>
 {% endblock %}

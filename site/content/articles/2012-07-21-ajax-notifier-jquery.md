@@ -32,11 +32,11 @@ The contents of the internal function to process the response is as follows:
 
 <pre>
 function(data){
-  var list = $('<\ul>')
+  var list = $('&lt;ul&gt;')
   $(data).each(function(){
     $('#result').html("");
     $(data).each(function(){
-      $('<\div>').append("<div><strong>"+this.user.screen_name+":</strong> "+this.text+"</div>");
+      $('&lt;div&gt;').append("&lt;div&gt;&lt;strong&gt;"+this.user.screen_name+":&lt;/strong&gt; "+this.text+"&lt;/div&gt;");
     });
   });
 }
@@ -52,8 +52,8 @@ The above code with the new callbacks is as follows:
 
 <pre>
 $('body').append(
-  $('<div>').attr('id', 'loading').append(
-      $('<img>').attr('src', 'ajax-loader.gif').attr('alt', 'Loading...')
+  $('&lt;div&gt;').attr('id', 'loading').append(
+      $('&lt;img&gt;').attr('src', 'ajax-loader.gif').attr('alt', 'Loading...')
     ).css({
       position: 'absolute',
       display: 'none'
@@ -114,8 +114,8 @@ Final code:
 $(document).ready(function(){
   // Insert the image
   $('body').append(
-    $('<div>').attr('id', 'loading').append(
-        $('<img>').attr('src', 'ajax-loader.gif').attr('alt', 'Loading...')
+    $('&lt;div&gt;').attr('id', 'loading').append(
+        $('&lt;img&gt;').attr('src', 'ajax-loader.gif').attr('alt', 'Loading...')
       ).css({
         position: 'absolute',
         display: 'none'
@@ -145,7 +145,7 @@ $(document).ready(function(){
         $(data).each(function(){
           $('#result').html("");
           $(data).each(function(){
-            $('#result').append("<div><strong>"+this.user.screen_name+":</strong> "+this.text+"</div>");
+            $('#result').append("&lt;div&gt;&lt;strong&gt;"+this.user.screen_name+":&lt;/strong&gt; "+this.text+"&lt;/div&gt;");
           });
         });
       }

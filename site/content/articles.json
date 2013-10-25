@@ -5,7 +5,7 @@
         "created": "2012-07-21",
         "tags": ["jquery"],
         "download_link": "",
-        "demo_link": "",
+        "demo_link": "http://demo.devaddiction.com/ajaxNotifier",
         "teaser": "How to create an Ajax Notifier using jQuery Library",
         "thumbnail": "/images/thumbnails/ajax-notifier.png",
         "contents": "2012-07-21-ajax-notifier-jquery.md"
@@ -16,7 +16,7 @@
         "created": "2012-07-10",
         "tags": ["development"],
         "download_link": "",
-        "demo_link": "http://demo.devaddiction.com/ajaxNotifier",
+        "demo_link": "",
         "teaser": "One of the first mistakes when you start in concurrent development",
         "thumbnail": "/images/thumbnails/parallel-processing.png",
         "contents": "2012-07-10-strands-lambdas-bugs.md"
