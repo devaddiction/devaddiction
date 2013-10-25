@@ -105,3 +105,9 @@ article.reader header {
 #article p {
     font-size: 18px;
 }
+
+/* About us page */
+.about-us {
+    margin-top: 30px;
+    font-size: 18px;
+}

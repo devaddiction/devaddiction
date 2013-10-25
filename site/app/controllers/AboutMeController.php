@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Response;
 /**
  * Resource:
  *
- * Display the collection of articles ArticlesBin "articles"
+ * Display the about me page
  */
 class AboutMeController extends BaseController
 {

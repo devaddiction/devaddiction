@@ -36,6 +36,7 @@ class HomeController extends BaseController
     public function index()
     {
         $lastestArticles = $this->articles->getList('articles', 0, self::MAX_HOME_ARTICLES);
+
         $articles = array();
 
         foreach($lastestArticles->getArticles() as $index=>$article) {
