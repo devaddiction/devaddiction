@@ -83,7 +83,7 @@ ul.tags-list li{
 
 /* Article list */
 
-article.list .row div {
+.container article.list {
     margin-top: 20px;
 }
 
@@ -110,4 +110,11 @@ article.reader header {
 .about-us {
     margin-top: 30px;
     font-size: 18px;
+}
+
+.about-us .photo-me {
+    -webkit-transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+    rotation: -5deg;
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=-5);
 }
