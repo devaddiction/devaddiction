@@ -117,4 +117,6 @@ article.reader header {
     -moz-transform: rotate(-5deg);
     rotation: -5deg;
     filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=-5);
+    border:1px solid #1f2c39;
+    border-radius:5px;
 }
