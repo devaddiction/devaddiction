@@ -6,7 +6,7 @@ When you start mixing things have to tread very eye for no fuss. Concurrent prog
 
 All this comes to mind because I recently had to debug some code with a pint like this:
 
-<pre><code>
+<pre class="prettyprint">
 public class Wrapper
 {
     private int current;
@@ -27,7 +27,7 @@ public class Wrapper
             });
     }
 }
-</code></pre>
+</pre>
 
 In the method <code>Start</code> invoking a function in a native dll which is passed a callback function that was invoked periodically to report progress. The callback function all it does is to update the values stored with the state of progress and update the text of a control, you need to use <code>BeginInvoke</code>and redirect the call to the UI thread .
 
@@ -39,7 +39,7 @@ Using a C # lambda expression we are creating a <a href="http://en.wikipedia.org
 
 
 To call <code>BeginInvoke</code> 're having a lambda expression:
-<pre>
+<pre class="prettyprint">
 Control.BeginInvoke((Action)(() =>control.Text = (current/total).ToString("p")));
 </code></pre>
 

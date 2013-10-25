@@ -13,11 +13,11 @@ Here we will create a notifier which shall show the mouse cursor on a spinner so
 <h2>Step 1 - AJAX Request</h2>
 
 The URL for the status messages in JSON format is:
-<pre>http://api.twitter.com/status/user_timeline/devaddiction.json</pre>
+<pre class="prettyprint">http://api.twitter.com/status/user_timeline/devaddiction.json</pre>
 
 The petition shall be as follows:
 
-<pre>
+<pre class="prettyprint">
 $.ajax({
   url: "http://api.twitter.com/status/user_timeline/devaddiction.json?count=15&callback=?"
   dataType: 'json',
@@ -30,7 +30,7 @@ $.ajax({
 
 The contents of the internal function to process the response is as follows:
 
-<pre>
+<pre class="prettyprint">
 function(data){
   var list = $('&lt;ul&gt;')
   $(data).each(function(){
@@ -50,7 +50,7 @@ Now that interest us are ajaxStart and ajaxStop. These occur just before sending
 
 The above code with the new callbacks is as follows:
 
-<pre>
+<pre class="prettyprint">
 $('body').append(
   $('&lt;div&gt;').attr('id', 'loading').append(
       $('&lt;img&gt;').attr('src', 'ajax-loader.gif').attr('alt', 'Loading...')
@@ -100,7 +100,7 @@ The event ajaxStart is transmitted if you start an ajax request and no other aja
 
 As relayed by all elements of the DOM can be heard on the item #loading directly:
 
-<pre>
+<pre class="prettyprint">
 $('#loading').bind('ajaxStart', function(){
     $(this).show();
   }).bind('ajaxStop', function(){
@@ -110,7 +110,7 @@ $('#loading').bind('ajaxStart', function(){
 
 Final code:
 
-<pre>
+<pre class="prettyprint">
 $(document).ready(function(){
   // Insert the image
   $('body').append(
