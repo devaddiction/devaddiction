@@ -1,4 +1,26 @@
 {
+    "responisve-web-template": {
+        "title": "Responsive Web Template in HTML5 and CSS3",
+        "author": "Fran Álvarez",
+        "created": "2012-10-02",
+        "tags": ["html5"],
+        "download_link": "http://download.devaddiction.com/freebie.zip",
+        "demo_link": "http://demo.devaddiction.com/freebie",
+        "teaser": "Freebie: Create your own responsive web template in HTML5 and CSS3.",
+        "thumbnail": "/images/thumbnails/responsive-web-template.png",
+        "contents": "2012-10-02-responisve-web-template.md"
+    },
+    "constructor-pattern": {
+        "title": "The Constructor Pattern",
+        "author": "Fran Álvarez",
+        "created": "2012-09-29",
+        "tags": ["patterns"],
+        "download_link": "",
+        "demo_link": "",
+        "teaser": "Review of the Constructor Pattern applied in Javascript.",
+        "thumbnail": "/images/thumbnails/software-patterns.png",
+        "contents": "2012-09-29-constructor-pattern.md"
+    },
     "customizable-notifications-alertify": {
         "title": "Customizable Notifications With Alertify",
         "author": "Fran Álvarez",

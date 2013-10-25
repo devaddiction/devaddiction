@@ -13,9 +13,11 @@
 
     <article class="list">
         {% for article in list %}
-        <div class="hover-block">
+        <div class="row">
             <div class="col-md-4">
-                    <a href="/articles/{{ article.getSlug }}"><img src="{{ article.getThumbnail }}" alt="{{ article.title }}">
+                <a class="enlarge" href="/articles/{{ article.getSlug }}">
+                    <img src="{{ article.getThumbnail }}" alt="{{ article.title }}"/>
+                </a>
             </div>
             <div class="col-md-8">
                 <div class="caption">
