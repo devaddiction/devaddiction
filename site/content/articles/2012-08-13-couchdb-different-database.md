@@ -59,7 +59,7 @@ function (doc) {
 </pre>
 We can define a reduced function like this:
 <pre class="prettyprint">
-function (keys, valuesâ€‹â€‹) {
+function (keys, values) {
  return sum (values);
 }
 </pre>

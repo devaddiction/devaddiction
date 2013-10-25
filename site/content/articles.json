@@ -1,4 +1,15 @@
 {
+    "pouchdb-web-database-couchdb-inspired": {
+        "title": "CouchDB: a different database",
+        "author": "Fran Álvarez",
+        "created": "2012-08-20",
+        "tags": ["couchdb", "javascript"],
+        "download_link": "",
+        "demo_link": "",
+        "teaser": "Reviewing the JavaScript database that syncs.",
+        "thumbnail": "/images/thumbnails/pouchdb.png",
+        "contents": "2012-08-20-pouchdb-web-database-couchdb-inspired.md"
+    },
     "couchdb-different-database": {
         "title": "CouchDB: a different database",
         "author": "Fran Álvarez",
@@ -8,7 +19,7 @@
         "demo_link": "",
         "teaser": "Quick look into this open source database",
         "thumbnail": "/images/thumbnails/couchdb.png",
-        "contents": "2012-07-21-couchdb-different-database.md"
+        "contents": "2012-08-13-couchdb-different-database.md"
     },
     "ajax-notifier-jquery": {
         "title": "Ajax Notifier using jQuery",
