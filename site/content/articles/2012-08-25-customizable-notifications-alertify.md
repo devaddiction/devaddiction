@@ -6,12 +6,12 @@ JavaScript code in the sample file is as follows, so you can take a look at the 
 
 <pre class="prettyprint">
 function alert(){
-      alertify.alert("&lt;strong&lt;DevAddiction&lt;/strong&lt; testing Alertify", function () {
+      alertify.alert("&lt;strong&gt;DevAddiction&lt;/strong&gt; testing Alertify", function () {
       });
 }
 
 function confirm(){
-      alertify.confirm("Here we confirm something.&lt;strong&lt;ENTER&lt;/strong&lt; and &lt;strong&lt;ESC&lt;/strong&lt; correspond to <&lt;strong&lt;OK&lt;/strong&lt; or &lt;strong&lt;Cancel&lt;/strong&lt;", function (e) {
+      alertify.confirm("Here we confirm something.&lt;strong&gt;ENTER&lt;/strong&gt; and &lt;strong&gt;ESC&lt;/strong&gt; correspond to &lt;strong&gt;OK&lt;/strong&gt; or &lt;strong&gt;Cancel&lt;/strong&gt;", function (e) {
             if (e) {
                   alertify.success("You pressed '" + alertify.labels.ok + "'");
             } else {
@@ -22,7 +22,7 @@ function confirm(){
 }
 
 function data(){
-      alertify.prompt("This is a &lt;b&lt;prompt&lt;/b&lt;, enter a value:", function (e, str) {
+      alertify.prompt("This is a &lt;strong&gt;prompt&lt;/strong&gt;, enter a value:", function (e, str) {
             if (e){
                   alertify.success("You pressed '" + alertify.labels.ok + "'' and enter: " + str);
             }else{
@@ -38,7 +38,7 @@ function notification(){
 }
 
 function ok(){
-      alertify.success("Visit &lt;a style="color: white;" href="\&quot;http://www.devaddiction.com/\&quot;" target="\&quot;_blank\&quot;">&lt;strong&lt;Devaddiction.com&lt;/strong&lt;&lt;/a&lt;");
+      alertify.success("Visit &lt;a style="color: white;" href="\&quot;http://www.devaddiction.com/\&quot;" target="\&quot;_blank\&quot;">&lt;strong&gt;Devaddiction.com&lt;/strong&gt;&lt;/a&lt;");
       return false;
 }
 
