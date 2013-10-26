@@ -1,4 +1,37 @@
 {
+    "rest-services-silex-client": {
+        "title": "REST services using Silex - CLIENT",
+        "author": "Fran Álvarez",
+        "created": "2012-10-20",
+        "tags": ["silex","rest"],
+        "download_link": "https://github.com/devaddiction/SilexRestServer",
+        "demo_link": "",
+        "teaser": "Second part of this tutorial. Here we will define how to create the client.",
+        "thumbnail": "/images/thumbnails/silex.png",
+        "contents": "2012-10-29-rest-services-silex-client.md"
+    },
+     "universal-node-unshortener": {
+        "title": "Node-unshortener to unshort any url",
+        "author": "Fran Álvarez",
+        "created": "2012-10-24",
+        "tags": ["javascript"],
+        "download_link": "https://github.com/Swizec/node-unshortener",
+        "demo_link": "",
+        "teaser": "Unshort any URL using this tool.",
+        "thumbnail": "/images/thumbnails/bitly.png",
+        "contents": "2012-10-24-universal-node-unshortener.md"
+    },
+    "rest-services-silex": {
+        "title": "REST services using Silex",
+        "author": "Fran Álvarez",
+        "created": "2012-10-20",
+        "tags": ["silex","rest"],
+        "download_link": "https://github.com/devaddiction/SilexRestServer",
+        "demo_link": "",
+        "teaser": "First part of the tutorial about create REST services using Silex.",
+        "thumbnail": "/images/thumbnails/silex.png",
+        "contents": "2012-10-20-rest-services-silex.md"
+    },
     "symfony2-ultra-fast-start": {
         "title": "Symfony2, tutorial for ultra-fast start",
         "author": "Fran Álvarez",
