@@ -34,7 +34,7 @@ Set app/config/parameters.ini with the options of your database (you can also do
     csrf_secret=op234j234j2424jojpfwesdcsdc
 </pre>
 
-<h2>3. Creating our first bundle</h3>
+<h2>3. Creating our first bundle</h2>
 
 Now we can create a bundle:
 
