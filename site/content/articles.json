@@ -1,4 +1,15 @@
 {
+    "singleton-pattern": {
+        "title": "The Singleton Pattern",
+        "author": "Fran Álvarez",
+        "created": "2012-11-05",
+        "tags": ["patterns"],
+        "download_link": "",
+        "demo_link": "",
+        "teaser": "Review of a bit more commun Singleton Pattern.",
+        "thumbnail": "/images/thumbnails/software-patterns.png",
+        "contents": "2012-11-05-singleton-pattern.md"
+    },
     "rest-services-silex-client": {
         "title": "REST services using Silex - CLIENT",
         "author": "Fran Álvarez",
