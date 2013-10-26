@@ -7,7 +7,7 @@
         "download_link": "https://github.com/devaddiction/s2_ultra_fast",
         "demo_link": "",
         "teaser": "Tutorial for an ultra fast start using this fantastic framework.",
-        "thumbnail": "/images/thumbnails/software-patterns.png",
+        "thumbnail": "/images/thumbnails/symfony.png",
         "contents": "2012-10-08-symfony2-ultra-fast-start.md"
     },
     "factory-pattern": {
