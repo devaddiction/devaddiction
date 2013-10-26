@@ -1,5 +1,5 @@
 {
-    "responisve-web-template": {
+    "responsive-web-template": {
         "title": "Responsive Web Template in HTML5 and CSS3",
         "author": "Fran Álvarez",
         "created": "2012-10-02",
@@ -8,7 +8,7 @@
         "demo_link": "http://demo.devaddiction.com/freebie",
         "teaser": "Freebie: Create your own responsive web template in HTML5 and CSS3.",
         "thumbnail": "/images/thumbnails/responsive-web-template.png",
-        "contents": "2012-10-02-responisve-web-template.md"
+        "contents": "2012-10-02-responsive-web-template.md"
     },
     "constructor-pattern": {
         "title": "The Constructor Pattern",
