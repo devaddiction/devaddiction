@@ -1,4 +1,15 @@
 {
+    "symfony2-ultra-fast-start": {
+        "title": "Symfony2, tutorial for ultra-fast start",
+        "author": "Fran Álvarez",
+        "created": "2012-10-08",
+        "tags": ["symfony2"],
+        "download_link": "https://github.com/devaddiction/s2_ultra_fast",
+        "demo_link": "",
+        "teaser": "Tutorial for an ultra fast start using this fantastic framework.",
+        "thumbnail": "/images/thumbnails/software-patterns.png",
+        "contents": "2012-10-08-symfony2-ultra-fast-start.md"
+    },
     "factory-pattern": {
         "title": "The Factory Pattern",
         "author": "Fran Álvarez",
