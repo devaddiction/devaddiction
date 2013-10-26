@@ -1,4 +1,15 @@
 {
+    "factory-pattern": {
+        "title": "The Factory Pattern",
+        "author": "Fran Álvarez",
+        "created": "2012-10-05",
+        "tags": ["patterns"],
+        "download_link": "",
+        "demo_link": "",
+        "teaser": "Review of the Factory Pattern applied in Javascript.",
+        "thumbnail": "/images/thumbnails/software-patterns.png",
+        "contents": "2012-10-05-factory-pattern.md"
+    },
     "responsive-web-template": {
         "title": "Responsive Web Template in HTML5 and CSS3",
         "author": "Fran Álvarez",
