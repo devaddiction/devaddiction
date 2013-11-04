@@ -37,6 +37,7 @@ As I mentioned at the beginning, this tutorial I will develop over several entri
 
 At the end of the tutorial will try to address the creation of a complete application that could serve as a practical example.
 
+<hr>
 <h2 id="events">Events</h2>
 In this first issue I would like to explain what I consider the transverse component Backbone: event management. Understanding the event system asentaremos bases that will help us better understand the different components that we will see in subsequent issues.
 
@@ -107,6 +108,7 @@ my_object.bind('my_event', function (arg1, arg2) {
 my_object.trigger('my_event', 'first argument', 'second argument');
 </pre>
 
+<hr>
 <h2 id="models">Models</h2>
 
 In this second issue we will continue hearing the Backbone library explaining one of its most important components: the models.
@@ -290,6 +292,7 @@ alert(client.cid) //c0
 </pre>
 
 
+<hr>
 <h2 id="collections">Collections</h2>
 
 After analyzing the models in the previous topic in this issue we will see collections that are simply not ordered sets of instances of models. Normally a collection contains instances of a single model, but there really is no restriction and a collection may contain instances of different models.
@@ -370,6 +373,7 @@ Clients = Backbone.Collection.Extend ({
 
 If a collection is defined <em>comparator</em> function remain orderly at all times because each time you insert a new instance of the model run collection management process. Usually done automatically, but still there is a method called sort that would force the implementation of the management process. This method can also generate the reset event.
 
+<hr>
 <h2 id="views">Views</h2>
 
 The Backbone are seen in control classes that will help us represent our models within the user interface of our application, detecting modification events for updates.
@@ -499,6 +503,8 @@ ClientPage = Backbone.View.Extend ({
 
 It is important to ensure that the model we link the events in context. As conventional methods expect views run in the context of one's own view instance, in the <em>bind</em> method we establish <em>this</em> as the third parameter, indicating that we want to use own instance of view as a backdrop.
 
+<hr>
+
 <h2 id="routers">Routers</h2>
 
 In traditional Web programming is normal routing to the server and the requested URL as a content or other offer. For example, a URL like blog.com/post/5 could mean that we must show a specific entry in a blog.
@@ -591,6 +597,7 @@ If your application does not start from the root URL /, we indicate it by the ro
 To use <em>Backbone.History</em> must have created at least one instance of the routers you have defined.
 
 
+<hr>
 <h2 id="synchronization">Synchronization and persistence</h2>
 
 And finally we come to the last topic of the tutorial on <a href="http://documentcloud.github.com/backbone/" target="_blank">Backbone.js</a>, which will work to see the mechanisms of persistence and synchronization with the server that offers the library. Previously we reviewed how we could create, modify and delete models in our application, but never said how we could send that information to the server to store or process it.
