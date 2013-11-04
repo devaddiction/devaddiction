@@ -1,4 +1,15 @@
 {
+    "backbonejs-tutorial": {
+        "title": "Backbone.js Tutorial",
+        "author": "Fran Álvarez",
+        "created": "2013-11-01",
+        "tags": ["backbone"],
+        "download_link": "",
+        "demo_link": "",
+        "teaser": "Collection of Backbone.js tutorials.",
+        "thumbnail": "/images/thumbnails/backbone.png",
+        "contents": "2013-11-01-backbonejs-tutorial.md"
+    },
     "singleton-pattern": {
         "title": "The Singleton Pattern",
         "author": "Fran Álvarez",
