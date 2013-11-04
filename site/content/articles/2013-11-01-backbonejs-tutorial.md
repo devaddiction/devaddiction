@@ -370,7 +370,7 @@ Clients = Backbone.Collection.Extend ({
 
 If a collection is defined <em>comparator</em> function remain orderly at all times because each time you insert a new instance of the model run collection management process. Usually done automatically, but still there is a method called sort that would force the implementation of the management process. This method can also generate the reset event.
 
-<h2 id="views">Views</h3>
+<h2 id="views">Views</h2>
 
 The Backbone are seen in control classes that will help us represent our models within the user interface of our application, detecting modification events for updates.
 
