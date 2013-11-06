@@ -1,4 +1,4 @@
-Lately I've been spending my evenings and nights working on a super secret and above awesome project that I will talk about â€¦ soon, when it's a bit more ready.
+Lately I've been spending my evenings and nights working on a super secret and above awesome project that I will talk about soon, when it's a bit more ready.
 
 That project deals mostly with Twitter and harnessing url's from the stream. As anyone who's sniffed at Twitter lately can atest, therea re many, many many strange urls floating around, using any number of url shortening schemes or what seems to have become quite fashionable, a custom domains that are shortenered via services nobody could guess at.
 
@@ -6,7 +6,7 @@ But when you're trying to do something useful with these it's usually much easie
 
 What's needed is some sort of library that can unshort pretty much any url you throw at it. Surely someone has already made one right?
 
-Turns out, outside of a few services, no such thing existed â€¦ and I didn't want to use a third party service. Naturally I set out to make my own library for unshortening short links.
+Turns out, outside of a few services, no such thing existed and I didn't want to use a third party service. Naturally I set out to make my own library for unshortening short links.
 
 You can <a href="https://github.com/Swizec/node-unshortener" target="_blank">check out the source on github</a>.
 

@@ -185,4 +185,4 @@ NOTE: Do not forget to add a line to the hosts file (on ubuntu /etc/hosts) to in
 
 <p>I hope you have served this article and I hope your comments and feedback to keep improving our project base.</p>
 
-<p>You can see the <a href="http://www.devaddiction.com/rest-services-silex-client">next chapter for this series</a> of REST & Silex here where I talk about the creation of the client.</p>
+<p>You can see the <a href="http://www.devaddiction.com/articles/rest-services-silex-client">next chapter for this series</a> of REST & Silex here where I talk about the creation of the client.</p>
