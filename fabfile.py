@@ -4,9 +4,9 @@ import time
 import datetime
 
 #configure this
-publish_dirs = {'staging': 'test.devaddiction.com', 'production': 'devaddiction.com'}
-env.hosts = ['fjalvarez@devaddiction.com']
-srv_root = '/var/www/'
+publish_dirs = {'staging': 'test.devaddiction.com', 'production': 'www.devaddiction.com'}
+env.hosts = ['fjalvarez@146.185.171.98']
+srv_root = '/var/www/nas/'
 repo = 'git@github.com:devaddiction/devaddiction.git'
 
 timestamp = datetime.datetime.fromtimestamp(int(time.time())).strftime('%Y%m%d-%H%M%S')
@@ -100,5 +100,5 @@ def update_symlinks(publish_dir, release_path):
         with settings(warn_only=True):
             run("cat last_release > prev_release")
         run("echo '%s' > last_release" % release_path)
-        run("rm -rf web")
-        run("ln -nfs %s/site/public web" % (release_path))
+        run("rm -rf htdocs")
+        run("ln -nfs %s/site/public htdocs" % (release_path))
