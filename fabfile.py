@@ -6,7 +6,7 @@ import datetime
 #configure this
 publish_dirs = {'staging': 'test.devaddiction.com', 'production': 'www.devaddiction.com'}
 env.hosts = ['fjalvarez@146.185.171.98']
-srv_root = '/var/www/nas/'
+srv_root = '/var/www/'
 repo = 'git@github.com:devaddiction/devaddiction.git'
 
 timestamp = datetime.datetime.fromtimestamp(int(time.time())).strftime('%Y%m%d-%H%M%S')
