@@ -4,8 +4,8 @@ import time
 import datetime
 
 #configure this
-publish_dirs = {'staging': 'test.devaddiction.com', 'production': 'www.devaddiction.com'}
-env.hosts = ['fjalvarez@146.185.171.98']
+publish_dirs = {'staging': 'test.devaddiction.com', 'production': 'devaddiction.com'}
+env.hosts = ['ubuntu@devaddiction.com']
 srv_root = '/var/www/'
 repo = 'git@github.com:devaddiction/devaddiction.git'
 
