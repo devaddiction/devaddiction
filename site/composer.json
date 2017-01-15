@@ -1,18 +1,18 @@
 {
-    "name": "devaddiction/site",
+    "name": "fjalvarezdd/franalvarezdediego.com",
     "type": "project",
-    "homepage": "http://www.devaddiction.com/",
+    "homepage": "http://www.franalvarezdediego.com/",
     "description": "My own personal codeBox",
     "authors": [
         {
             "name": "Fran Álvarez",
-            "email": "fjalvarez@gmail.com",
-            "homepage": "http://www.devaddiction.com/",
+            "email": "hello@franalvarezdediego.com",
+            "homepage": "http://www.franalvarezdediego.com/",
             "role": "Developer"
         }
     ],
     "license": "MIT",
-    "keywords": ["devaddiction", "laravel", "php"],
+    "keywords": ["fran alvarez", "laravel", "php"],
 
     "require": {
         "laravel/framework": "4.0.*",
